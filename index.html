@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Nota Pesanan</title>
+  </head>
+  <body>
+    <div class="container">
+      <img class="kurawa" src="image/bg.jpg" alt="kurawa">
+      <img
+        src="image/kurawa logo b.png"
+        alt="Gambar Bulat"
+        class="round-image"
+      />
+      <h1>Formulir Nota Pesanan</h1>
+      <form id="orderForm">
+        <div class="form-group">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required />
+        </div>
+
+        <div class="form-group">
+          <label for="tanggal">Tanggal:</label>
+          <input type="date" id="tanggal" name="tanggal" required />
+        </div>
+
+        <div class="form-group">
+          <label for="jumlah">Jumlah Pesanan:</label>
+          <input type="number" id="jumlah" name="jumlah" min="1" required />
+        </div>
+
+        <div class="form-group">
+          <label for="jenisKain">Jenis Kain:</label>
+          <select id="jenisKain" name="jenisKain" required>
+            <option value="Combed 24s">Combed 24s</option>
+            <option value="Combed 30s">Combed 30s</option>
+          </select>
+        </div>
+        
+
+        <div class="form-group">
+          <label for="statusPembayaran">Status Pembayaran:</label>
+          <select id="statusPembayaran" name="statusPembayaran" required>
+            <option value="DP50%">DP 50%</option>
+            <option value="Lunas">Lunas</option>
+          </select>
+        </div>
+        
+
+        <div class="form-group">
+          <label for="KodeKaos">Kode Kaos:</label>
+          <p class="ig">lihat di postingan ig kami!!! @kurawa_corp</p>
+          <input type="text" id="KodeKaos" name="KodeKaos" required />
+        </div>
+
+        <div class="form-group">
+          <label for="nomorHp">Nomor HP:</label>
+          <input
+            type="tel"
+            id="nomorHp"
+            name="nomorHp"
+            pattern="[0-9]{10,12}"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="alamat">Alamat Lengkap Dan Kode Pos:</label>
+          <textarea
+            class="alamat"
+            id="alamat"
+            name="alamat"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="buktiPembayaran">Bukti Pembayaran:</label>
+          <input
+            type="file"
+            id="buktiPembayaran"
+            name="buktiPembayaran"
+            accept="image/*"
+          />
+        </div>
+
+        <button type="submit">Buat Nota</button>
+      </form>
+
+      <div id="notaCard" class="card">
+        <img
+          src="image/kurawa logo b.png"
+          alt="Gambar Bulat"
+          class="round-image-card"
+        />
+        <h2>Nota Pesanan</h2>
+        <table>
+          <tr>
+            <td>Nama:</td>
+            <td><span id="cardNama"></span></td>
+          </tr>
+          <tr>
+            <td>Tanggal:</td>
+            <td><span id="cardTanggal"></span></td>
+          </tr>
+          <tr>
+            <td>Jumlah Pesanan:</td>
+            <td><span id="cardJumlah"></span></td>
+          </tr>
+          <tr>
+            <td>Jenis Kain:</td>
+            <td><span id="cardJenisKain"></span></td>
+          </tr>
+          <tr>
+            <td>Status Pembayaran:</td>
+            <td><span id="cardStatusPembayaran"></span></td>
+          </tr>
+          
+          <tr>
+            <td>Kode Kaos:</td>
+            <td><span id="cardKodeKaos"></span></td>
+          </tr>
+          <tr>
+            <td>Nomor HP:</td>
+            <td><span id="cardNomorHp"></span></td>
+          </tr>
+          <tr>
+            <td>Alamat Lengkap:</td>
+            <td><span id="cardAlamat"></span></td>
+          </tr>
+        </table>
+        <img
+          id="cardBuktiPembayaran"
+          src=""
+          alt="Bukti Pembayaran"
+          style="max-width: 100%"
+        />
+      </div>
+      <button id="downloadButton" style="display: none">
+        Download Nota
+      </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #000000;
+}
+
+.bg {
+  background-size: cover;
+  background-position: center center; /* Tetap terpusat di tengah */
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Warna putih dengan transparansi 0.9 */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.kurawa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 180vh; /* Batasan lebar maksimal */
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0.5; /* Mengatur tingkat transparansi */
+}
+
+.round-image {
+  display: block;
+  margin: 0 auto;
+  width: 130px; /* Sesuaikan dengan ukuran yang Anda inginkan */
+  height: 130px; /* Sesuaikan dengan ukuran yang Anda inginkan */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff; /* Ubah warna bingkai sesuai keinginan */
+  margin-bottom: 20px;
+}
+.round-image-card {
+  position: absolute;
+  top: 10px; /* Sesuaikan dengan jarak vertikal dari atas */
+  right: 20px; /* Sesuaikan dengan jarak horizontal dari kanan */
+  width: 80px; /* Sesuaikan dengan ukuran yang Anda inginkan */
+  height: 80px; /* Sesuaikan dengan ukuran yang Anda inginkan */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fefefe; /* Ubah warna bingkai sesuai keinginan */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.card {
+  /* ... existing styles ... */
+  position: relative;
+  padding: 20px;
+}
+
+.card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.card table td {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.card table td:first-child {
+  width: 30%;
+  font-weight: bold;
+}
+
+#cardBuktiPembayaran {
+  /* ... existing styles ... */
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #363636;
+}
+
+.radio-group {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start; /* Menggeser ke kiri */
+  align-items: center; /* Menyamakan vertikal */
+  gap: 10px; /* Jarak antar elemen */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+input[type="file"] {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.alamat {
+  width: 95%;
+}
+
+.radio-group label {
+  color: #333;
+}
+
+button[type="submit"],
+button#downloadButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ... Existing styles ... */
+
+/* Style for select element */
+.form-group select {
+  width: 98%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Style for select label */
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #363636;
+  margin-bottom: 5px;
+}
+
+/* ... Existing styles ... */
+
+
+.ig {
+  font-style: italic;
+  margin-top: 2px; /* Mengubah teks menjadi miring */
+  color: #ff1515; /* Warna teks */
+  font-size: 14px; /* Ukuran teks */
+  top: 100%; /* Jarak vertikal dari atas */
+  left: 0; /* Posisi dari kiri */
+}
+
+.card {
+  display: none;
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  position: relative;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  margin-bottom: 5px;
+  color: #000000;
+}
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#cardBuktiPembayaran {
+  display: block;
+  max-width: 100%;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#downloadButton {
+  display: none;
+  margin-top: 20px;
+  right: 0; /* Posisi dari kanan */
+  margin: auto;
+  background-color: #007bff;
+}
+
+#downloadButton:hover {
+  background-color: #218838;
+}
